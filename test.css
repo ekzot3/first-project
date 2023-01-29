@@ -1,0 +1,38 @@
+/* reset style */
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* page style */
+.border{
+  position: relative;
+  border: 1px solid black;
+  margin-left: 50px;
+  margin-right: 100px;
+  padding: 10px ;
+}
+.border::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40px;
+  height: 36px;
+  width: 36px;
+  background-color: purple;
+  background-image: url(./images/youtube.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.use{
+  fill: purple;
+}
+.use:hover{
+  fill: red;
+}
